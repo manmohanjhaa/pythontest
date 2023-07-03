@@ -1,0 +1,137 @@
+ 1. In the below elements which of them are values or an expression? eg:- values can be
+    integer or string and expressions will be mathematical operators.
+    *
+    'hello'
+    -87.8
+     -
+     /
+     +
+     6
+
+
+Ans-
+     *    (Expressions) 
+    'hello' (string value)(value)
+    -87.8 (floating-point value)(value)
+     -    (Expressions)
+     /    (Expressions)
+     +    (Expressions)    
+     6    (integer value)(value)
+
+
+  2. What is the difference between string and variable?
+
+Ans-  variable
+      Variables can hold various types of data, including strings, numbers (integers or floating-point values), boolean values (true or false), and more.
+      variables can store different values at different times during program execution. The value assigned to a variable can be changed as needed.
+      Variables are used to store intermediate results, perform calculations, and facilitate data manipulation in a program. 
+
+
+     String
+     Strings are used to store and manipulate textual data. They can contain letters, numbers, symbols, and spaces.
+     Strings are immutable, meaning their values cannot be changed once they are assigned. To modify a string, you need to create a new string.
+     A string is a data type used to represent text or a sequence of characters. It is typically enclosed within single quotes ('') or double quotes (""). For example: 'Manmohan' or "Jha".
+
+
+ 3. Describe three different data types.
+
+Ans- (A)  Integer (int):
+        The integer data type represents whole numbers without any fractional or decimal parts.
+        Integers can be positive, negative, or zero.
+        Examples of integers: -5, 0, 10.
+
+     (B) Floating-Point (float):
+         The floating-point data type represents numbers with fractional or decimal parts.
+         Floating-point numbers are stored as approximations of real numbers and can represent a wide range of values.
+         Examples of floating-point numbers: -3.14, 2.718, 1.0.
+
+      (C) String
+           The string data type represents a sequence of characters.
+           Strings are commonly used to store and manipulate textual data.
+           Examples of strings: "Hello, world!", "MANMOHAn", "123".
+
+ 4. What is an expression made up of? What do all expressions do?
+
+AnS - An expression in programming is made up of one or more operands and operators.
+      Components of an expression:
+      Operands: These are the values or variables. Examples of operands include numbers, strings, or variables.
+      Operators: These are symbols or keywords that perform specific operations on the operands.
+      Examples of Operators (+ - * /)
+      Expressions serve various purposes in programming:
+      Computation: Expressions allow you to perform calculations or manipulate values.
+      Assignment: Expressions are often used in assigning values to variables. 
+      Comparison: Expressions are used for comparing values. Relational operators like >, <, ==, etc.
+      Control flow: Expressions play a crucial role in conditional statements and loops. 
+
+ 5. This assignment statements, like spam = 10. What is the difference between an
+    expression and a statement?
+
+ANS -  it assigns the value 10 to the variable spam. It doesn't produce any value, but it carries out the action of assigning.
+       In spam=10,spam is a variable name the name 10 is assigned to the variable.
+       Expressions can beassigned or used as operands, while statements can only be declared.
+       
+       Difference between Expressions and Statements:
+
+       Expressions are evaluated to produce a value, while statements are executed to perform actions or tasks.
+       Expressions produce a value that can be used in other expressions or assigned to variables, whereas statements do not produce a value.
+
+  6. After running the following code, what does the variable bacon contain?
+     bacon = 22
+     bacon + 1
+ANS - After executing tthe variable bacon will contain the value 23 
+
+   7. What should the values of the following two terms be?
+      'spam'+'spamspam'
+      'spam'*3
+ANS - 'spam' + 'spamspam' it will perform a concatenates and gives resultas spamspamspam
+       'spam'*3 it will perform we can multiply elements gives result as spamspamspam.
+
+   8. Why is eggs a valid variable name while 100 is invalid?
+Ans - A variable name cannot start with a number.
+      "Eggs" is a valid variable name because it follows the rules commonly used in programming languages. It starts with a letter, does not conflict with any reserved keywords, and consists of only alphanumeric characters and underscores.
+       "100" is considered invalid as a variable name because it violates these rules. Variable names typically cannot start with a number, and they should have at least one letter or underscore. Since "100" consists only of digits, it doesn't meet these requirements.
+  
+    9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+ Ans - In Python programming languages, you can use the following three functions to get the integer, floating-point number, or string version of a value:
+     A. Integer Conversion:
+        Function: int()
+     B. Floating-Point Conversion:
+        Function: float()
+     C. String Conversion:
+        Function: str()
+
+    10. Why does this expression cause an error? How can you fix it?
+        'I have eaten' + 99 + 'burritos.'
+     Ans- causes an error because it is attempting to concatenate different data types.
+          String = 'I have eaten'
+          integer = 99
+          String = 'burritos.'
+          To fix this error, we need to ensure that all the operands are of the same data type before concatenation. One way to achieve this is by converting the integer 99 to a string using the str() function.
+          'I have eaten ' + str(99) + ' burritos.' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
