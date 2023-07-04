@@ -1,0 +1,242 @@
+1.     What are the two values of the Boolean data type? How do you write them?
+Ans-   The Boolean data type represents logical values and can have two possible values: true and false. In programming languages. 
+       the keyword "true" represents the value for true, while the keyword "false" represents the value for false. These keywords are usually case-sensitive.
+
+
+2.     What are the three different types of Boolean operators?
+Ans-   The three different types of Boolean operators are:
+A.     AND Operator:
+       The AND operator is denoted by the symbol "&&" (double ampersand) .
+       It returns true if both operands or conditions are true, and false otherwise.
+       B.  OR Operator:
+       The OR operator is denoted by the symbol "||" (double vertical bar) 
+       It returns true if at least one of the operands or conditions is true, and false if both operands are false.
+        C.      NOT Operator:
+        The NOT operator is denoted by the exclamation mark "!".
+        It is a unary operator that negates the value of the operand. If the operand is true, it returns false, and if the operand is false, it returns true.
+
+
+3.      Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+Ans-
+        A.  AND Operator (&&): 
+        Operand A	Operand B	       Result
+        false       	 false	                false
+        false       	 true                   false
+        true	         false                  false
+        true        	 true                   true
+        B. OR Operator (||):
+        Operand A	     Operand B                 Result
+        false	               false	                false
+        false	               true	                true
+        true	               false         	        true
+        true        	       true	                true
+        C. NOT Operator (!):
+        Operand	                Result
+        false	                 true
+        true	                 false
+
+
+4.  What are the values of the following expressions?
+     (5 > 4) and (3 == 5)
+     not (5 > 4)
+      (5 > 4) or (3 == 5)
+    not ((5 > 4) or (3 == 5))
+    (True and True) and (True == False)
+    (not False) or (not True)
+Ans- 
+     A. (5 > 4) and (3 == 5) => false
+     B. not (5 > 4) => false
+     C. (5 > 4) or (3 == 5) => true
+     D. not ((5 > 4) or (3 == 5)) => false
+     E. (True and True) and (True == False) => false
+     F. (not False) or (not True) => true
+
+
+5.   What are the six comparison operators?
+ANS- 
+A. Equal to (==):
+B. Not equal to (!=):
+C. Greater than (>):
+D. Less than (<):
+E. Greater than or equal to (>=):
+F. Less than or equal to (<=):
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+Ans- 
+The equal to operator (==) is used to compare two values to check if they are equal. It returns a Boolean value (true or false) based on the comparison. 
+Assignment operator (=) is used to assign a value to a variable. 
+
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+ANS- 
+A.
+if spam == 10:
+print('eggs')
+This block is executed if the value of spam is equal to 10. It contains a single line of code: print('eggs').
+B.
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+if statement (spam > 5) is true. It contains two lines of code: print('bacon') if the condition is true, and print('ham') if the condition is false.
+C.
+print('spam')
+print('spam')
+This block is executed unconditionally, regardless of the preceding if statements. It contains two lines of code: print('spam') and print('spam').
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+Ans- 
+if spam == 1:
+      print("Hello")
+elif spam == 2:
+     print("Howdy")
+else:
+     print("Greetings!")
+
+
+9.  If your programme is stuck in an endless loop, what keys you’ll press?
+Ans- 
+      A. Ctrl+C
+      B. Ctrl+Break
+     C.   Ctrl+D
+     D.   Ctrl+Z   
+
+
+10. How can you tell the difference between break and continue?   
+ANS-
+Break statement:-  The "break" statement is used to immediately exit the innermost loop and continue execution with the next statement following the loop. When a "break" statement is executed, the loop is terminated prematurely, and control jumps to the first statement after the loop.
+Example:-
+for i in range(10):
+ if i == 5:
+break
+print(i)
+OUTPUT
+0
+1
+2
+3
+4
+Continue statement:- The "continue" statement, on the other hand, is used to skip the current iteration of the loop and move on to the next iteration. When a "continue" statement is encountered, the loop execution immediately jumps to the next iteration, ignoring any remaining statements in the current iteration.
+Example:-
+for i in range(10):
+if i % 2 == 0:
+continue
+print(i)
+Output:-
+1
+3
+5
+7
+9
+
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+ANS-
+range(10)
+This expression represents a range that starts from 0 (by default) and includes all integers up to, but not including, the specified value of 10.
+EXAMPLE
+for i in range(10):
+print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+B. range(0, 10), 
+ This expression represents a range that starts from the specified value of 0 and includes all integers up to, but not including, the specified value of 10.
+EXAMPLE
+for i in range(0, 10):
+print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+C. range(0, 10, 1)
+This expression represents a range that starts from the specified value of 0, ends at the specified value of 10 (exclusive), and increments by the specified step value of 1.
+EXAMPLE
+for i in range(0, 10, 1):
+print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent  program that prints the numbers 1 to 10 using a while loop.
+ANS-
+A. program that prints the numbers 1 to 10 using a for loop:
+for i in range(1, 11):
+print(i)
+output
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+B. equivalent program that prints the numbers 1 to 10 using a while loop:
+     num = 1
+while num <= 10:
+print(num)
+num += 1
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+ANS- By using the dot notation.
+the spam module is imported using the import statement. After that, you can call the bacon() function using the dot notation: spam.bacon(). This indicates that the bacon() function is a member of the spam module.
+
+
+
+  
+
+    
